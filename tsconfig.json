@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"],
+    "types": ["vite/client", "node", "jest"],
+    "skipLibCheck": true,
+    "paths": {
+      "#/*": ["./src/*"],
+      "#components/*": ["./src/components/*"],
+      "#composables/*": ["./src/composables/*"],
+      "#layouts/*": ["./src/layouts/*"],
+      "#pages/*": ["./src/pages/*"],
+      "#services/*": ["./src/services/*"],
+      "#store/*": ["./src/store/*"],
+      "#types/*": ["../api/types/*"],
+      "#utils": ["./src/utils"],
+      "#api": ["./src/api"],
+      "#chalk2/*": ["../workflow/src/chalk2/*"]
+    },
+    "allowJs": true,
+    "outDir": "dist"
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"
+  ]
+}
